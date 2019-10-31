@@ -1,2 +1,2 @@
-# E-commerce_witch_React
+# E-commerce witch React
 Basic E-Commerce Project witch React
