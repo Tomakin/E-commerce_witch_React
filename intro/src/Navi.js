@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import {Link} from 'react-router-dom';
 import {
   Collapse,
   Navbar,
@@ -16,7 +17,7 @@ import CartSummary from './CartSummary';
       return (
         <div>
         <Navbar color="light" light expand="md">
-          <NavbarBrand href="/">Northwind App</NavbarBrand>
+          <NavbarBrand><Link to="/">Northwind App</Link></NavbarBrand>
           <NavbarToggler onClick={this.toggle} />
           <Collapse isOpen={this.isOpen} navbar>
             <Nav className="ml-auto" navbar>
@@ -26,7 +27,7 @@ import CartSummary from './CartSummary';
               <NavItem>
                 <NavLink href="https://github.com/reactstrap/reactstrap">GitHub</NavLink>
               </NavItem>
-              <CartSummary cart={this.props.cart}/>
+              <CartSummary removeItem= {this.props.removeItem} cart={this.props.cart}/>
             </Nav>
           </Collapse>
         </Navbar>
