@@ -22,11 +22,13 @@ import CartSummary from './CartSummary';
           <Collapse isOpen={this.isOpen} navbar>
             <Nav className="ml-auto" navbar>
               <NavItem>
-                <NavLink href="/components/">Components</NavLink>
+                <NavLink><Link to="/form1">Form</Link></NavLink>
               </NavItem>
+
               <NavItem>
-                <NavLink href="https://github.com/reactstrap/reactstrap">GitHub</NavLink>
+                <NavLink><Link to="/form2">Form2</Link></NavLink>
               </NavItem>
+
               <CartSummary removeItem= {this.props.removeItem} cart={this.props.cart}/>
             </Nav>
           </Collapse>
