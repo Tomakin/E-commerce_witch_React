@@ -1,19 +1,18 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
-import counter from "./components/counter"
-import decreaseCounter from "./components/decreaseCounter"
-import increaseByTwoCounter from './components/increaseByTwoCounter';
-import increaseCounter from './components/increaseCounter';
+import Counter from "./components/Counter"
+import DecreaseCounter from "./components/decreaseCounter"
+import IncreaseByTwoCounter from './components/increaseByTwoCounter';
+import IncreaseCounter from './components/increaseCounter';
 
 
 function App() {
   return (
     <div>
-      <counter/>
-      <increaseCounter/>
-      <decreaseCounter/>
-      <increaseByTwoCounter/>
+      <Counter/>
+      <IncreaseCounter/>
+      <DecreaseCounter/>
+      <IncreaseByTwoCounter/>
     </div>
   );
 }
